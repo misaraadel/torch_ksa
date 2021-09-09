@@ -1266,7 +1266,7 @@ ul {
   left: 0;
   -webkit-box-shadow: 0px 0px 10px rgba(196, 174, 163, 0.5);
           box-shadow: 0px 0px 10px rgba(196, 174, 163, 0.5);
-  z-index: 999 !important;
+  z-index: 9999 !important;
 }
 
 .navbar .nav-content {
@@ -1462,6 +1462,8 @@ ul {
   height: 24px;
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-filter: invert(71%) sepia(10%) saturate(488%) hue-rotate(336deg) brightness(99%) contrast(89%);
+          filter: invert(71%) sepia(10%) saturate(488%) hue-rotate(336deg) brightness(99%) contrast(89%);
 }
 
 .navbar .nav-content .nav-list .navbar-nav .nav-item .nav-link span {
@@ -1491,6 +1493,63 @@ ul {
 
 .navbar .nav-content .icon-list li:last-child {
   margin-right: 20px;
+}
+
+.mob-nav {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999 !important;
+  background-color: #C4AEA3;
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.mob-nav .nav-item .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.mob-nav .nav-item .nav-link img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 10px;
+  opacity: .5;
+  -webkit-filter: invert(95%) sepia(96%) saturate(18%) hue-rotate(296deg) brightness(104%) contrast(100%);
+          filter: invert(95%) sepia(96%) saturate(18%) hue-rotate(296deg) brightness(104%) contrast(100%);
+}
+
+.mob-nav .nav-item .nav-link span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  opacity: .5;
+}
+
+.mob-nav .nav-item .nav-link.active img, .mob-nav .nav-item .nav-link.active span {
+  opacity: 1;
 }
 
 .active-nav {

@@ -1,12 +1,25 @@
+@media (max-width: 900px) {
+    .mob-nav{
+        display: flex !important;
+    }
+    header .item img{
+        height: 140px !important;
+    }
+     
+    .navbar .nav-content .nav-list .navbar-nav .user-profile{
+        background-size: 100% 100% !important;
+    }
+    .scroll-top-btn{
+        display: none;
+    }
+    footer{
+        padding-bottom: 100px;
+    }
+}
 @media (max-width: 500px) {
     .popup-window .popup ,
     .navbar .nav-content .nav-list .navbar-nav{
         width: 100% !important;
     }
-    header .item img{
-        height: 250px !important;
-    }
-    .navbar .nav-content .nav-list .navbar-nav .user-profile{
-        background-size: 100% 100% !important;
-    }
+  
 }
