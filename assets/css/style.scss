@@ -643,3 +643,46 @@ header{
         }
     }
 }
+.search-content{
+    width: 100%;
+    padding: 150px 0px 0px 0px;
+    .input-group{
+        position: relative;
+        height: 50px;
+        background-color: rgba($color: #C4C4C4 , $alpha: .10);
+        border-radius: 6px;
+        overflow: hidden;
+        .input-group-prepend{
+            border: none;
+            padding: 0px 0px;
+            height: 100%;
+            background-color: transparent;
+            border-radius: 0px;
+            .input-group-text{
+                padding: 0px 20px;
+                background-color: transparent;
+                height: 100%;
+                border: none;
+                border-radius: 0px;
+                img{
+                    width: 25px;
+                    height: 25px;
+                    object-fit: contain;
+                }
+            }
+        }
+        .form-control{
+            border: 0px !important;
+            background-color: transparent !important;
+            height: 100%;
+            color: #474141;
+            font-size: 15px;
+            font-weight: 500;
+            &::placeholder{
+                color: #474141;
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+}

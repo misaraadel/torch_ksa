@@ -1725,4 +1725,73 @@ header .owl-carousel .owl-stage {
   -webkit-transform-origin: right;
           transform-origin: right;
 }
+
+.search-content {
+  width: 100%;
+  padding: 150px 0px 0px 0px;
+}
+
+.search-content .input-group {
+  position: relative;
+  height: 50px;
+  background-color: rgba(196, 196, 196, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.search-content .input-group .input-group-prepend {
+  border: none;
+  padding: 0px 0px;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 0px;
+}
+
+.search-content .input-group .input-group-prepend .input-group-text {
+  padding: 0px 20px;
+  background-color: transparent;
+  height: 100%;
+  border: none;
+  border-radius: 0px;
+}
+
+.search-content .input-group .input-group-prepend .input-group-text img {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.search-content .input-group .form-control {
+  border: 0px !important;
+  background-color: transparent !important;
+  height: 100%;
+  color: #474141;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.search-content .input-group .form-control::-webkit-input-placeholder {
+  color: #474141;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.search-content .input-group .form-control:-ms-input-placeholder {
+  color: #474141;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.search-content .input-group .form-control::-ms-input-placeholder {
+  color: #474141;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.search-content .input-group .form-control::placeholder {
+  color: #474141;
+  font-size: 20px;
+  font-weight: 500;
+}
 /*# sourceMappingURL=style.css.map */
