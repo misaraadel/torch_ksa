@@ -2,7 +2,7 @@
     .mob-nav{
         display: flex !important;
     }
-    header .item img{
+    .header-content .item img{
         height: 140px !important;
     }
      
@@ -15,6 +15,11 @@
     footer{
         padding-bottom: 100px;
     }
+    .product-box .content{
+        padding: 15px 0px;
+        text-align: center;
+    }
+
 }
 @media (max-width: 500px) {
     .popup-window .popup ,
