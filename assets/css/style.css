@@ -1837,6 +1837,154 @@ ul {
   padding: 0px;
 }
 
+.form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.form-content .from-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.form-content .from-check input[type="checkbox"], .form-content .from-check input[type="radio"] {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+}
+
+.form-content .from-check input[type="checkbox"]:checked::after, .form-content .from-check input[type="radio"]:checked::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.form-content .from-check input[type="checkbox"]:checked + span, .form-content .from-check input[type="radio"]:checked + span {
+  color: #fff;
+}
+
+.form-content .from-check .size-lable {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border: 1px solid #C4AEA3;
+  position: relative;
+  margin: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  z-index: 99;
+}
+
+.form-content .from-check .size-lable span {
+  color: #C4AEA3;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.form-content .from-check .size-check {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.form-content .from-check .size-check::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #C4AEA3;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  z-index: -1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.form-content .from-check .color-check {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  margin: auto;
+}
+
+.form-content .from-check .color-check::after {
+  content: '\f00c';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #fff;
+  font-size: 18px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.form-content .from-check .color-lable {
+  font-weight: 500;
+  font-size: 15px;
+  margin: 10px 0px 0px;
+  color: #1D2323;
+}
+
+.form-content .from-check:last-child {
+  margin: 0px;
+}
+
 .banner {
   width: 100%;
   padding: 30px 0px;
@@ -1877,17 +2025,6 @@ ul {
 
 .project-details .content {
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 20px 0px;
   border-top: 1px solid #F2F2F2;
   border-bottom: 1px solid #f2f2f2;
@@ -2012,6 +2149,18 @@ ul {
 .project-details .content .product-rate .rate-link span {
   margin-right: 5px;
   color: #C4AEA3;
+}
+
+.project-details .color-select {
+  padding: 20px 0px;
+}
+
+.project-details .color-select h4 {
+  color: #474141;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2rem;
+  margin-bottom: 20px;
 }
 
 .project-details .description {
