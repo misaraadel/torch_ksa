@@ -2391,6 +2391,10 @@ ul {
   padding: 40px 0px;
 }
 
+.shop.stores {
+  padding: 100px 0px 40px 0px;
+}
+
 .shop .box {
   width: 100%;
   display: -webkit-box;

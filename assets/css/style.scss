@@ -1123,6 +1123,9 @@
 .shop{
     width: 100%;
     padding: 40px 0px;
+    &.stores{
+        padding: 100px 0px 40px 0px;
+    }
     .box{
         width: 100%;
         display: flex;
