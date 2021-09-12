@@ -242,6 +242,13 @@
         transition: opacity 300ms ease-in-out,
                     top 1000ms ease-in-out,
                     transform 1000ms ease-in-out;
+        .desc{
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            margin: 20px 0px;
+            color: #BEBEBE;
+        }
         
         .icon {
             margin:5px 0px;
@@ -433,14 +440,14 @@
             opacity:1;
             transform: translateY(0px) scale(1);
             transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
-            &> div {
+            &> div , p {
                 top:0px;
                 opacity:1;
             }
             .icon {
                 transition: all 300ms ease-in-out 250ms;
             }
-            .title {
+            .title  {
                 transition: all 300ms ease-in-out 300ms;
             }
             .dismiss-btn {
@@ -736,6 +743,28 @@
     display: flex;
     align-items: center;
     align-content: center;
+    flex-direction: column;
+    width: 100%;
+    .textarea{
+        height: 100px !important;
+        align-items: flex-start;
+        .input-group-text{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content: flex-start;
+            padding: 9px ​20px 0px 20px !important;
+            img{
+                margin-top: 10px !important;
+            }
+        }
+    }
+    textarea{
+        resize: none;
+    }
+    .form-group{
+        width: 100%;
+    }
     .from-check{
         display: flex;
         flex-direction: column;
@@ -1337,6 +1366,38 @@
             border: none;
         }
     }
+    .stars-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .star-rating {
+            display:flex;
+            flex-direction: row-reverse;
+            font-size:2em;
+            justify-content:space-around;
+            padding:0 .2em;
+            text-align:center;
+            width:5em;
+        }
+          
+        .star-rating input {
+            display:none;
+        }
+          
+        .star-rating label {
+            color:#E5E5E5;
+            cursor:pointer;
+        }
+          
+        .star-rating :checked ~ label {
+            color:#C4AEA3;
+        }
+          
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color:#C4AEA3;
+        }
+    }
 }
 .search-content{
     width: 100%;
@@ -1370,8 +1431,11 @@
         &.accept{
             width: calc(100% - 120px);
             background-color: #C4AEA3;
+            &.add-comment{
+                width: 100%;
+            }
         }
-        a , span{
+        a , span , button{
             width: 100%;
             height: 100%;
             font-weight: 700;
@@ -1381,6 +1445,10 @@
             justify-content: center;
             align-items: center;
             align-content: center;
+            background-color: transparent;
+            padding: 0px;
+            outline: none;
+            border: none;
         }
     }
 }
@@ -1423,6 +1491,71 @@
                 &:last-child{
                     border: none;
                 }
+            }
+        }
+    }
+}
+.rate-content{
+    width: 100%;
+    padding: 100px 0px;
+    .rate-box{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: center;
+        border-bottom: 1px solid #f2f2f2;
+        .image-content{
+            img{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .content{
+            width: calc(100% - 110px);
+            .heading{
+                width: 100%;
+                display: flex;
+                margin-bottom: 0px !important;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+                h4{
+                    color: #C4AEA3;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 2rem;
+                    margin: 0px;
+                }
+                .rate{
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    li{
+                        margin: 0px 5px;
+                        i{
+                            font-size: 20px;
+                            color: #E5E5E5;
+                            transition: all .3s linear;
+                        }
+                        &:hover , &.active{
+                            i{
+                                color: #C4AEA3;
+                            }
+                        }
+                    }
+                }
+
+            }
+            p{
+                margin: 10px 0px;
+                color: #1D2323;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 2.7rem;
             }
         }
     }
