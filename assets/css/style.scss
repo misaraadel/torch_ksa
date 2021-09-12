@@ -1115,6 +1115,11 @@
         } 
     }
 }
+.products{
+    width: 100%;
+    padding-top: 140px;
+    padding-bottom: 20px;
+}
 .shop{
     width: 100%;
     padding: 40px 0px;
@@ -1557,6 +1562,32 @@
                 font-weight: 500;
                 line-height: 2.7rem;
             }
+        }
+    }
+}
+.brands{
+    width: 100%;
+    padding: 100px 0px;
+    .brand-box{
+        width: 100%;
+        padding: 20px 10px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        background-color: rgba($color: #C4C4C4 , $alpha: .06);
+        img{
+            width: 100px;
+            height: 60px;
+            object-fit: contain;
+            margin: 0px 0px 0px 10px;
+        }
+        h4{
+            padding: 0px 20px;
+            border-right: 1px solid #f2f2f2;
+            color: #474141;
+            font-weight: 500;
+            font-size: 17px;
+            margin: 0px !important;
         }
     }
 }
