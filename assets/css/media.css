@@ -2,7 +2,7 @@
     .mob-nav{
         display: flex !important;
     }
-    .header-content .item img{
+    .header-content .item img , .banner img , .project-details .item img {
         height: 140px !important;
     }
      
