@@ -1019,10 +1019,11 @@ ul {
   padding: 15px 15px 15px 15px;
 }
 
-.product-box .content h4 {
+.product-box .content .heading {
   color: #474141;
   font-weight: 700;
   font-size: 18px;
+  margin-bottom: 0px !important;
   line-height: 2rem;
 }
 
@@ -1819,12 +1820,12 @@ ul {
   right: 0px !important;
 }
 
-.header-content {
+.header-content, .project-details {
   width: 100%;
   padding: 120px 0px 30px 0px;
 }
 
-.header-content .item img {
+.header-content .item img, .project-details .item img {
   width: 100%;
   height: 500px;
   border-radius: 20px;
@@ -1832,8 +1833,243 @@ ul {
      object-fit: cover;
 }
 
-.header-content .owl-carousel .owl-stage {
+.header-content .owl-carousel .owl-stage, .project-details .owl-carousel .owl-stage {
   padding: 0px;
+}
+
+.project-details .item {
+  position: relative;
+}
+
+.project-details .item img {
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.project-details .item .code {
+  padding: 5px 15px;
+  background-color: #474141;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 10px;
+  right: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.project-details .content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0px;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.project-details .content h4 {
+  color: #474141;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.project-details .content .brand-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 30px 0px;
+}
+
+.project-details .content .brand-content .brand-shape {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 15px;
+  background-color: #996E77;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  margin-left: 10px;
+}
+
+.project-details .content .brand-content .brand-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.project-details .content .brand-content .brand-logo li {
+  position: relative;
+  margin: 0px 10px;
+}
+
+.project-details .content .brand-content .brand-logo li::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: -10px;
+  background-color: #C4C4C4;
+  top: 0px;
+}
+
+.project-details .content .brand-content .brand-logo li:last-child::after {
+  display: none;
+}
+
+.project-details .content .brand-content .brand-logo li img {
+  width: 80px;
+  height: 30px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.project-details .content .product-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.project-details .content .product-rate .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.project-details .content .product-rate .rate li {
+  margin: 0px 5px;
+}
+
+.project-details .content .product-rate .rate li i {
+  font-size: 20px;
+  color: #E5E5E5;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.project-details .content .product-rate .rate li:hover i, .project-details .content .product-rate .rate li.active i {
+  color: #C4AEA3;
+}
+
+.project-details .content .product-rate .rate-link {
+  margin-right: 15px;
+  color: #474141;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.project-details .content .product-rate .rate-link span {
+  margin-right: 5px;
+  color: #C4AEA3;
+}
+
+.project-details .description {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project-details .description h4 {
+  color: #474141;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.project-details .description p {
+  color: #1D2323;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2rem;
+  text-align: justify;
+  margin: 20px 0px;
+}
+
+.project-details .product-desc {
+  padding: 20px 0px;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.project-details .product-desc h4 {
+  color: #474141;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.project-details .product-desc .product-desc-list {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.project-details .product-desc .product-desc-list li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 20px;
+}
+
+.project-details .product-desc .product-desc-list li .title, .project-details .product-desc .product-desc-list li .desc {
+  color: #474141;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 .store-header {
@@ -2333,12 +2569,17 @@ ul {
   background-color: #F55656;
 }
 
+.fixed-btn li.delete.price {
+  background-color: #C4AEA3 !important;
+  border-left: 1px solid #F2F2F2 !important;
+}
+
 .fixed-btn li.accept {
   width: calc(100% - 120px);
   background-color: #C4AEA3;
 }
 
-.fixed-btn li a {
+.fixed-btn li a, .fixed-btn li span {
   width: 100%;
   height: 100%;
   font-weight: 700;
