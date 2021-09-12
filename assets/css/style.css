@@ -2637,25 +2637,25 @@ ul {
 
 .form-content .input-group .form-control::-webkit-input-placeholder {
   color: #474141;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
 }
 
 .form-content .input-group .form-control:-ms-input-placeholder {
   color: #474141;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
 }
 
 .form-content .input-group .form-control::-ms-input-placeholder {
   color: #474141;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
 }
 
 .form-content .input-group .form-control::placeholder {
   color: #474141;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
 }
 
