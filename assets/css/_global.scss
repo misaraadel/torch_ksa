@@ -39,7 +39,12 @@
         background: #C4AEA3; 
     }
 }
-
+button{
+    padding: 0px !important;
+    border: none !important;
+    outline: none !important; 
+    background-color: transparent !important;
+}
 body{
     font-family: "ExpoArabic" , sans-serif ;
 }

@@ -1,9 +1,27 @@
+// ------------ increase products -----------
+$(".increse").click(function() {
+    $(this).parent().children(".number-count ").html(parseInt($(this).parent().children(".number-count").html()) + 1);
+});
+
+$(".decrese").click(function() {
+
+    child = $(this).parent().children(".number-count ");
+
+    if (parseInt(child.html()) > 1) {
+        child.html(parseInt(child.html()) - 1);
+    }
+
+    $(this).parent().children(".full-price").addClass("minused");
+
+});
+
 $(document).ready(function () {
     /*start the loading page */
     // window.addEventListener("load", function () {
     //     const loader = document.querySelector(".loader");
     //     loader.className += " hidden";
     // });
+   
     //scroll to top make fade for button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 700) {
