@@ -41,15 +41,16 @@
         <nav class="navbar store-nav">
             <div class="container">
                 <div class="nav-content">
-                   
                     <div class="nav-toggler">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                    <h4 class="head">
-                        المتاجر
-                    </h4>
+
+                    <a href="index.html" class="brand-name">
+                        <img src="assets/images/logo.png" alt="" />
+                    </a>
+
                     <div class="nav-list">
                         <div class="overlay"></div>
                         <ul class="navbar-nav">
@@ -133,160 +134,92 @@
                             </li>
                         </ul>
                     </div>
-                    <ul class="icon-list">
-                        <li>
-                            <a href="search.html">
-                                <img src="assets/images/search.svg" alt="">
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </nav>
-         <!--start bottom nav in mobile only-->
-        <ul class="mob-nav">
-            <li class="nav-item">
-                <a href="index.html" class="nav-link">
-                    <img src="assets/images/home.svg" alt="" />
-                    <span>Torch</span>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a href="brands.html" class="nav-link ">
-                    <img src="assets/images/brands.svg" alt="">
-                    <span>Brands</span>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a href="stores.html" class="nav-link active">
-                    <img src="assets/images/commerce.svg" alt="">
-                    <span>المتاجر</span>
-                </a>
-            </li>
-               <li class="nav-item">
-                <a href="category.html" class="nav-link">
-                    <img src="assets/images/category.svg" alt="">
-                    <span>الأقسام</span>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a href="cart.html" class="nav-link">
-                                    <img src="assets/images/bag.svg" alt="">
-                                    <span>حقيبتي</span>
-                                </a>
-            </li>
-        </ul>
         <main>
-             <!--start shop section-->
-             <section class="shop stores">
+            <!--start store header-->
+            <section class="store-header" style="background: url('assets/images/user_header.png');">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 col-4 mb-5">
-                            <a href="store.html" class="box">
-                                <img src="assets/images/shop_1.png" alt="" />
-                                <h4>متجر ساسورا</h4>
-                            </a>
+                        <div class="col-12">
+                            <div class="content">
+                                <div class="image-content">
+                                    <img src="assets/images/profile_user.png" alt="" />
+                                </div>
+                                <div class="location mb-3 mt-3">
+                                    <h4>متجر ساسورا</h4>
+                                    <img src="assets/images/save_name.svg" alt="" />
+                                </div>
+                                <div class="location">
+                                    <img src="assets/images/location.svg" alt="">
+                                    <p>الرياض , حي الروضة</p>
+                                </div>
+                                <div class="buttons-content mt-3">
+                                    <a href="edit_info.html" class="custom-bg-btn">
+                                        <span>تعديل المعلومات</span>
+                                    </a>
+                                    <a href="edit_password.html" class="custom-border-btn">
+                                        <span>تعديل كلمة المرور</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-3 col-4 mb-5">
-                            <a href="store.html" class="box">
-                                <img src="assets/images/shop_2.png" alt="" />
-                                <h4>متجر ساسورا</h4>
-                            </a>
+                    </div>
+                </div>
+            </section>
+            <section class="profile-data">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                  <a class="nav-link active" id="orders-tab" data-toggle="tab" href="#orders" role="tab" aria-controls="orders" aria-selected="true">
+                                      <img src="assets/images/orders.svg" alt="" />
+                                      <span>طلباتي</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="orderLocation-tab" data-toggle="tab" href="#orderLocation" role="tab" aria-controls="orderLocation" aria-selected="false">
+                                      <img src="assets/images/order_location.svg" alt="" />
+                                      <span>عناوين الشحن</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="favoraite-tab" data-toggle="tab" href="#favoraite" role="tab" aria-controls="favoraite" aria-selected="false">
+                                      <img src="assets/images/favoraite.svg" alt="" />
+                                      <span>قائمة أمنياتي</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="orders-tab" data-toggle="tab" href="#orders" role="tab" aria-controls="orders" aria-selected="true">
+                                        <img src="assets/images/wallet.svg" alt="" />
+                                        <span>المحفظة</span>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" id="orderLocation-tab" data-toggle="tab" href="#orderLocation" role="tab" aria-controls="orderLocation" aria-selected="false">
+                                        <img src="assets/images/torch_points.svg" alt="" />
+                                        <span>Torch Points</span>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" id="favoraite-tab" data-toggle="tab" href="#favoraite" role="tab" aria-controls="favoraite" aria-selected="false">
+                                        <img src="assets/images/about_us.svg" alt="" />
+                                        <span>نبذة عن التطبيق</span>
+                                    </a>
+                                  </li>
+                            </ul>
                         </div>
-                        <div class="col-lg-3 col-4 mb-5">
-                            <a href="store.html" class="box">
-                                <img src="assets/images/shop_3.png" alt="" />
-                                <h4>متجر ساسورا</h4>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 mb-5">
-                            <a href="store.html" class="box">
-                                <img src="assets/images/shop_2.png" alt="" />
-                                <h4>متجر ساسورا</h4>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 mb-5">
-                            <a href="store.html" class="box">
-                                <img src="assets/images/shop_1.png" alt="" />
-                                <h4>متجر ساسورا</h4>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 mb-5">
-                            <a href="store.html" class="box">
-                                <img src="assets/images/shop_2.png" alt="" />
-                                <h4>متجر ساسورا</h4>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 mb-5">
-                            <a href="store.html" class="box">
-                                <img src="assets/images/shop_3.png" alt="" />
-                                <h4>متجر ساسورا</h4>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 mb-5">
-                            <a href="store.html" class="box">
-                                <img src="assets/images/shop_2.png" alt="" />
-                                <h4>متجر ساسورا</h4>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 mb-5">
-                            <a href="store.html" class="box">
-                                <img src="assets/images/shop_1.png" alt="" />
-                                <h4>متجر ساسورا</h4>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 mb-5">
-                            <a href="store.html" class="box">
-                                <img src="assets/images/shop_2.png" alt="" />
-                                <h4>متجر ساسورا</h4>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 mb-5">
-                            <a href="store.html" class="box">
-                                <img src="assets/images/shop_3.png" alt="" />
-                                <h4>متجر ساسورا</h4>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 mb-5">
-                            <a href="store.html" class="box">
-                                <img src="assets/images/shop_2.png" alt="" />
-                                <h4>متجر ساسورا</h4>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 mb-5">
-                            <a href="store.html" class="box">
-                                <img src="assets/images/shop_1.png" alt="" />
-                                <h4>متجر ساسورا</h4>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 mb-5">
-                            <a href="store.html" class="box">
-                                <img src="assets/images/shop_2.png" alt="" />
-                                <h4>متجر ساسورا</h4>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 mb-5">
-                            <a href="store.html" class="box">
-                                <img src="assets/images/shop_3.png" alt="" />
-                                <h4>متجر ساسورا</h4>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-4 mb-5">
-                            <a href="store.html" class="box">
-                                <img src="assets/images/shop_2.png" alt="" />
-                                <h4>متجر ساسورا</h4>
-                            </a>
+                        <div class="col-lg-8">
+                            
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        
-        <!--loading page-->
-        <div class="loader">
+          <!--loading page-->
+          <div class="loader">
             <div class="container">
                  <div class="loading-content">
                      <div class="drop-water light-blue"></div>

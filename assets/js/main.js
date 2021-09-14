@@ -14,6 +14,36 @@ $(".decrese").click(function() {
     $(this).parent().children(".full-price").addClass("minused");
 
 });
+var oldPass = false;
+function oldPassFun(){
+    if(oldPass){
+        document.getElementById("oldPassId").setAttribute("type" , "password");
+        oldPass = false;
+    }else{
+        document.getElementById("oldPassId").setAttribute("type" , "text");
+        oldPass = true;
+    }
+}
+var newPass = false;
+function newPassFun(){
+    if(newPass){
+        document.getElementById("newPassId").setAttribute("type" , "password");
+        newPass = false;
+    }else{
+        document.getElementById("newPassId").setAttribute("type" , "text");
+        newPass = true;
+    }
+}
+var acceptNewPass = false;
+function acceptNewPassFun(){
+    if(acceptNewPass){
+        document.getElementById("acceptNewPassId").setAttribute("type" , "password");
+        acceptNewPass = false;
+    }else{
+        document.getElementById("acceptNewPassId").setAttribute("type" , "text");
+        acceptNewPass = true;
+    }
+}
 
 $(document).ready(function () {
     /*start the loading page */
