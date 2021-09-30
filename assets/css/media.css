@@ -26,5 +26,8 @@
     .navbar .nav-content .nav-list .navbar-nav{
         width: 100% !important;
     }
-  
+    .order-content .order-box .order-driver li::after{
+        top: 30%;
+        left: -20px;
+    }
 }

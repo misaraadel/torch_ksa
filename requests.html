@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--start the meta tags-->
+        <!--meta tag for utf-8 code for ar and en-->
+        <meta charset="utf-8">
+        <!--meta tag for description of website-->
+        <meta name="description" content="....">
+        <!--meta tag for the author of website-->
+        <meta name="author" content="misara adel">
+        <!--meta tag for make website compatible with all screen devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--end the meta tags-->
+        <!--title tag for website appear in tab-->
+        <title>torch ksa</title>
+        <!-- the style link for image icon-->
+        <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon"/>
+        <!--start the intialize of css library files-->
+        <!--the intilize of fontawsome lib-->
+        <link rel="stylesheet" href="assets/css/lib/all.min.css">
+        <!--the intilize of animate lib used with wow js lib-->
+        <link rel="stylesheet" href="assets/css/lib/jquery.fancybox.min.css">
+        <!--the intilize of bootstrap en version lib-->
+        <!-- <link rel="stylesheet" href="assets/css/lib/bootstrap.css"> -->
+        <!--the intilize of bootstrap ar version lib-->
+        <link rel="stylesheet" href="assets/css/lib/bootstrap-rtl.min.css">
+        <!--the intilize of owl carousel lib-->
+        <link rel="stylesheet" href="assets/css/lib/owl.carousel.min.css">
+        <!--the intilize of dots that appear with owl carousel -->
+        <link rel="stylesheet" href="assets/css/lib/owl.theme.default.css">
+        <!--end the intialize of css library files-->
+        <!--start the intilalize of css files -->
+        <!--the stylesheet en file-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--the media file screen -->
+        <link rel="stylesheet" href="assets/css/media.css">
+        <!--end the intilalize of css files-->
+    </head>
+    <body>
+        <!--start nav-->
+        <nav class="navbar store-nav">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="nav-toggler">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <h4 class="head">
+                        طلباتي
+                    </h4>
+                    <ul class="icon-list">
+                        <li>
+                            <button type="button" data-toggle="modal" data-target="#filterModal">
+                                <img src="assets/images/filter_icon.svg" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <a href="search.html">
+                                <img src="assets/images/search.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="nav-list">
+                        <div class="overlay"></div>
+                        <ul class="navbar-nav">
+                            <li class="user-profile">
+                                <a href="#" class="user-link">
+                                    <img src="assets/images/user.png" alt="" />
+                                    <div class="content">
+                                        <h5> ,,  مرحبا بك من جديد</h5>
+                                        <h6>Carmen Mahmoud</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img src="assets/images/home.svg" alt="" />
+                                    <span>Torch</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="brands.html" class="nav-link">
+                                    <img src="assets/images/brands.svg" alt="">
+                                    <span>Brands</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="stores.html" class="nav-link">
+                                    <img src="assets/images/commerce.svg" alt="">
+                                    <span>المتاجر</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="category.html" class="nav-link">
+                                    <img src="assets/images/category.svg" alt="">
+                                    <span>الأقسام</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="cart.html" class="nav-link">
+                                    <img src="assets/images/bag.svg" alt="">
+                                    <span>حقيبتي</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img src="assets/images/request.svg" alt="">
+                                    <span>طلباتي</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="profile.html" class="nav-link">
+                                    <img src="assets/images/profile.svg" alt="">
+                                    <span>حسابي</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img src="assets/images/contact.svg" alt="">
+                                    <span>تواصل معنا</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img src="assets/images/question.svg" alt="">
+                                    <span>الأسئلة الشائعة</span>
+                                </a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img src="assets/images/lang.svg" alt="">
+                                    <span>تغيير اللغة</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div>
+                    <h5 class="modal-title" id="filterModalLabel"> فرز الطلبات </h5>
+                    <p>
+                      قم بفرز الطلبات حسب الحالة
+                    </p>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <form class="form-content">
+                      <div class="row">
+                          <div class="col-12">
+                            <div class="wrapper">
+                                <input type="checkbox" class="radio-check"/>
+                                <label class="radio-title">قيد التأكيد</label>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="wrapper">
+                                <input type="checkbox" class="radio-check"/>
+                                <label class="radio-title">تم التأكيد</label>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="wrapper">
+                                <input type="checkbox" class="radio-check"/>
+                                <label class="radio-title">قيد التجهيز</label>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="wrapper">
+                                <input type="checkbox" class="radio-check"/>
+                                <label class="radio-title">تم الشحن</label>
+                            </div>
+                          </div>
+                      </div>
+                  </form>
+                </div>
+                <div class="modal-footer buttons-content">
+                  <button type="button" class="custom-bg-btn">تطبيق</button>
+                  <button type="button" class="custom-border-btn" data-dismiss="modal">إلغاء</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <main>  
+            <section class="order-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 mb-5">
+                            <div class="order-box">
+                                <div class="order-detials">
+                                    <div class="content">
+                                        <h4>89SA548799444</h4>
+                                        <p class="time">
+                                            ‏20 أغسطس 2021
+                                        </p>
+                                    </div>
+                                    <div class="buttons-content">
+                                        <a href="requests_detials.html" class="custom-bg-btn">
+                                            تفاصيل
+                                        </a>
+                                    </div>
+                                </div>
+                                <ul class="order-driver">
+                                    <li>
+                                        <span class="check active">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                        <span class="title">قيد التأكيد</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="check active">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                        <span class="title">تم التأكيد </span>
+                                    </li>
+
+                                    <li>
+                                        <span class="check">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                        <span class="title">قيد التجهيز</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="check">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                        <span class="title">تم الشحن</span>
+                                    </li>
+                                </ul>
+                                <div class="order-detials product-states">
+                                    <div class="content">
+                                        <h4>
+                                            حالة الطلب  :
+                                            <span>تم التأكيد</span>
+                                        </h4>
+                                    </div>
+                                    <div class="buttons-content">
+                                        <a href="#" class="custom-border-btn">
+                                            تتبع
+                                        </a>
+                                    </div>
+                                </div>
+                                <ul class="product">
+                                    <li>
+                                        <img src="assets/images/product.png" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/product.png" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/product.png" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/product.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 mb-5">
+                            <div class="order-box">
+                                <div class="order-detials">
+                                    <div class="content">
+                                        <h4>89SA548799444</h4>
+                                        <p class="time">
+                                            ‏20 أغسطس 2021
+                                        </p>
+                                    </div>
+                                    <div class="buttons-content">
+                                        <a href="requests_detials.html" class="custom-bg-btn">
+                                            تفاصيل
+                                        </a>
+                                    </div>
+                                </div>
+                                <ul class="order-driver">
+                                    <li>
+                                        <span class="check active">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                        <span class="title">قيد التأكيد</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="check active">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                        <span class="title">تم التأكيد </span>
+                                    </li>
+
+                                    <li>
+                                        <span class="check active">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                        <span class="title">قيد التجهيز</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="check">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                        <span class="title">تم الشحن</span>
+                                    </li>
+                                </ul>
+                                <div class="order-detials product-states">
+                                    <div class="content">
+                                        <h4>
+                                            حالة الطلب  :
+                                            <span>تم التأكيد</span>
+                                        </h4>
+                                    </div>
+                                    <div class="buttons-content">
+                                        <a href="#" class="custom-border-btn">
+                                            تتبع
+                                        </a>
+                                    </div>
+                                </div>
+                                <ul class="product">
+                                    <li>
+                                        <img src="assets/images/product.png" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/product.png" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/product.png" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/product.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main> 
+        <!--loading page-->
+        <div class="loader">
+            <div class="container">
+                 <div class="loading-content">
+                     <div class="drop-water light-blue"></div>
+                     <div class="drop-water light-blue"></div>
+                     <div class="box">
+                         <div class="wave light-blue">
+         
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+        <!--Scroll to top button-->
+        <a data-scroll href="#" class="scroll-top-btn" id="scroll-btn">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <!--start the intialize of js lib-->
+        <!--first intilize jquery lib-->
+        <script src="assets/js/lib/jquery4.js"></script>
+        <!--second intialize popper js lib-->
+        <script src="assets/js/lib/popper.js"></script>
+        <!--third intialize bootstrap js lib-->
+        <script src="assets/js/lib/bootstrap.js"></script>
+        <!--intialize owl coursel js lib -->
+        <script src="assets/js/lib/owl.carousel.min.js"></script>
+        <!--intialize wow js lib-->
+        <script src="assets/js/lib/jquery.fancybox.min.js"></script>
+        <!--end the intialize of js lib-->
+        <!--intialize main js file-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
