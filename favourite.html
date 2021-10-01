@@ -38,113 +38,22 @@
     </head>
     <body>
         <!--start nav-->
-        <nav class="navbar">
+        <nav class="navbar store-nav">
             <div class="container">
                 <div class="nav-content">
-                    <div class="nav-toggler">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="back-btn">
+                        <a href="profile.html" class="back-arrow">
+                            <img src="assets/images/back_btn.svg" alt="" />
+                        </a>
                     </div>
 
-                    <a href="index.html" class="brand-name">
-                        <img src="assets/images/logo.png" alt="" />
-                    </a>
-
-                    <div class="nav-list">
-                        <div class="overlay"></div>
-                        <ul class="navbar-nav">
-                            <li class="user-profile">
-                                <a href="#" class="user-link">
-                                    <img src="assets/images/user.png" alt="" />
-                                    <div class="content">
-                                        <h5> ,,  مرحبا بك من جديد</h5>
-                                        <h6>Carmen Mahmoud</h6>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <img src="assets/images/home.svg" alt="" />
-                                    <span>Torch</span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="brands.html" class="nav-link">
-                                    <img src="assets/images/brands.svg" alt="">
-                                    <span>Brands</span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="stores.html" class="nav-link">
-                                    <img src="assets/images/commerce.svg" alt="">
-                                    <span>المتاجر</span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <img src="assets/images/category.svg" alt="">
-                                    <span>الأقسام</span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="cart.html" class="nav-link">
-                                    <img src="assets/images/bag.svg" alt="">
-                                    <span>حقيبتي</span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <img src="assets/images/request.svg" alt="">
-                                    <span>طلباتي</span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="profile.html" class="nav-link">
-                                    <img src="assets/images/profile.svg" alt="">
-                                    <span>حسابي</span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="contact_us.html" class="nav-link">
-                                    <img src="assets/images/contact.svg" alt="">
-                                    <span>تواصل معنا</span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="questions.html" class="nav-link">
-                                    <img src="assets/images/question.svg" alt="">
-                                    <span>الأسئلة الشائعة</span>
-                                </a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <img src="assets/images/lang.svg" alt="">
-                                    <span>تغيير اللغة</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
+                    <h4 class="head">
+                        قائمة أمنياتي
+                    </h4>
                     <ul class="icon-list">
                         <li>
                             <a href="#">
-                                <img src="assets/images/favoraite.svg" alt="">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="search.html">
-                                <img src="assets/images/search.svg" alt="">
+                                <img src="assets/images/delete.svg" alt="">
                             </a>
                         </li>
                     </ul>
@@ -152,29 +61,39 @@
             </div>
         </nav>
         <main>
-            <section class="search-content">
+            <section class="product favorite">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 mb-5">
-                            <form class="form-content">
-                                <div class="form-group">
-                                    <div class="input-group mb-2">
-                                        <button class="input-group-prepend">
-                                          <div class="input-group-text">
-                                            <img src="assets/images/search.svg" alt="" /> 
-                                          </div>
-                                        </button>
-                                        <input type="password" class="form-control" placeholder="ابحث هنا" />
-                                      </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-6 mb-5">
+                        <div class="col-lg-3 col-md-6 col-6 mb-4">
                             <div class="product-box">
                                 <div class="image-content">
                                     <img src="assets/images/product.png" alt="" />
-                                    <button class="fav open-popup-btn">
-                                        <img src="assets/images/favoraite.svg" alt="">
+                                    <button class="fav">
+                                        <img src="assets/images/fill_heart.svg" alt="">
+                                    </button>
+                                    <div class="code">
+                                        98213
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <a href="product_details.html" class="heading"> كريم كيكا هونج </a>
+                                    <p>
+                                        وصف المنتج يظهر هنا معبرا عن
+                                        ... محتواه بطريقة مبسطة
+                                    </p>
+                                    <h5>420 SAR</h5>
+                                    <button class="add-card open-popup-btn">
+                                        <span>اضف لسلة الشراء</span>
+                                    </button>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="col-lg-3 col-md-6 col-6 mb-4">
+                            <div class="product-box">
+                                <div class="image-content">
+                                    <img src="assets/images/product.png" alt="" />
+                                    <button class="fav">
+                                        <img src="assets/images/fill_heart.svg" alt="">
                                     </button>
                                     <div class="code">
                                         98213
@@ -193,12 +112,36 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-6 mb-5">
+                        <div class="col-lg-3 col-md-6 col-6 mb-4">
                             <div class="product-box">
                                 <div class="image-content">
                                     <img src="assets/images/product.png" alt="" />
-                                    <button class="fav open-popup-btn">
-                                        <img src="assets/images/favoraite.svg" alt="">
+                                    <button class="fav">
+                                        <img src="assets/images/fill_heart.svg" alt="">
+                                    </button>
+                                    <div class="code">
+                                        98213
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <a href="product_details.html" class="heading"> كريم كيكا هونج </a>
+                                    <p>
+                                        وصف المنتج يظهر هنا معبرا عن
+                                        ... محتواه بطريقة مبسطة
+                                    </p>
+                                    <h5>420 SAR</h5>
+                                    <button class="add-card open-popup-btn">
+                                        <span>اضف لسلة الشراء</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6 mb-4">
+                            <div class="product-box">
+                                <div class="image-content">
+                                    <img src="assets/images/product.png" alt="" />
+                                    <button class="fav">
+                                        <img src="assets/images/fill_heart.svg" alt="">
                                     </button>
                                     <div class="code">
                                         98213
@@ -221,7 +164,7 @@
                 </div>
             </section>
         </main>
-        <!--add to cart popup --> 
+         <!--add to cart popup --> 
         <div class="popup-window ">
             <div class="popup-overlay"></div>
             <div class="popup">
@@ -238,6 +181,25 @@
                 </div>
             </div>
         </div> 
+        <!--loading page-->
+        <div class="loader">
+            <div class="container">
+                <div class="loading-content">
+                    <div class="drop-water light-blue"></div>
+                    <div class="drop-water light-blue"></div>
+                    <div class="box">
+                        <div class="wave light-blue">
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Scroll to top button-->
+        <a data-scroll href="#" class="scroll-top-btn" id="scroll-btn">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <!--start the intialize of js lib-->
         <!--first intilize jquery lib-->
         <script src="assets/js/lib/jquery4.js"></script>
         <!--second intialize popper js lib-->
@@ -252,4 +214,4 @@
         <!--intialize main js file-->
         <script src="assets/js/main.js"></script>
     </body>
- </html>
+</html>
