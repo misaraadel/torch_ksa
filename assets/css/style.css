@@ -1223,6 +1223,17 @@ ul {
   color: #474141;
 }
 
+.popup-window .popup .title.small-title, .popup-sort .popup .title.small-title {
+  font-size: 15px;
+  margin: 20px 0px;
+}
+
+.popup-window .popup .sub-title, .popup-sort .popup .sub-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #C4AEA3;
+}
+
 .popup-window .popup .dismiss-btn, .popup-sort .popup .dismiss-btn {
   margin-top: 15px;
   display: -webkit-box;
@@ -1333,6 +1344,20 @@ ul {
   margin: 0px 10px 0px 0px;
 }
 
+.popup-window .popup .form-check .wrapper .radio-title span, .popup-sort .popup .form-check .wrapper .radio-title span {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.popup-window .popup .form-check .wrapper .radio-title span.title, .popup-sort .popup .form-check .wrapper .radio-title span.title {
+  color: #474141 !important;
+}
+
+.popup-window .popup .form-check .wrapper .radio-title span.secondary-color, .popup-sort .popup .form-check .wrapper .radio-title span.secondary-color {
+  color: #BEBEBE !important;
+}
+
 .popup-window .popup .form-check .wrapper:last-child, .popup-sort .popup .form-check .wrapper:last-child {
   border: none;
 }
@@ -1440,6 +1465,23 @@ ul {
   position: relative;
   top: 10px;
   opacity: 0;
+}
+
+.popup-window.code .icon, .popup-sort.code .icon {
+  margin: 5px 0px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #C4AEA3;
+  background-color: #C4AEA3;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 60px;
+}
+
+.popup-window.code .icon i.fa, .popup-sort.code .icon i.fa {
+  font-size: 30px;
+  color: #fff;
 }
 
 .popup-window.active, .popup-sort.active {
@@ -2359,6 +2401,16 @@ ul {
   font-size: 15px;
   font-weight: 500;
   line-height: 25px;
+}
+
+.modal-body.content p.first-title {
+  color: #474141 !important;
+  margin: 0px !important;
+}
+
+.modal-body.content p.secondary-color {
+  color: #C4AEA3 !important;
+  margin: 5px 0px 0px 0px !important;
 }
 
 .modal-footer {
@@ -4587,6 +4639,114 @@ ul {
   height: 50px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.sumbit-data.login-pages {
+  background: url("../images/bg.svg") #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.sumbit-data.login-pages .flex-content .wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.sumbit-data.login-pages .flex-content a {
+  color: #1D2323;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sumbit-data.login-pages .buttons-content p {
+  color: #1D2323;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.sumbit-data.login-pages .buttons-content .row {
+  width: 100% !important;
+}
+
+.sumbit-data.login-pages .custom-bg-btn, .sumbit-data.login-pages .custom-border-btn {
+  width: 100% !important;
+}
+
+.sumbit-data.login-pages p {
+  color: #1D2323;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.sumbit-data.login-pages h6 {
+  color: #C4AEA3;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.sumbit-data.login-pages .skip-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.sumbit-data.login-pages .skip-content.center-content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sumbit-data.login-pages .skip-content .skip-btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.sumbit-data.login-pages .skip-content .skip-btn img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 10px;
+}
+
+.sumbit-data.login-pages .skip-content .skip-btn span {
+  color: #474141;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.sumbit-data.login-pages .skip-content .skip-btn span.gold-word {
+  margin: 0px 10px;
+  color: #C4AEA3 !important;
+}
+
+.login .custom-bg-btn {
+  width: 100% !important;
+  text-align: center !important;
 }
 
 .questions {
